@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9103452757775716317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7646843519923502180}
+  - component: {fileID: 8880485720573739371}
+  m_Layer: 0
+  m_Name: ObjectPooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7646843519923502180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9103452757775716317}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8880485720573739371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9103452757775716317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8719a7383792dfb4ba844c8ddae213cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _poolList:
+  - tag: Player
+    prefab: {fileID: 1654952934681347463, guid: 1690d6a07e0b4604cbd207900f3e36c3,
+      type: 3}
+    size: 1
+  - tag: BasicProjectile
+    prefab: {fileID: 2238064687733802928, guid: da5b3a3f04643d54eba6f301d192459d,
+      type: 3}
+    size: 50
+  - tag: UltimateProjectile
+    prefab: {fileID: 1636248499688089840, guid: 2d115b5a515caf34b8103fd67f80a220,
+      type: 3}
+    size: 50
+  - tag: BasicHitImpact
+    prefab: {fileID: 3768976069547879947, guid: 46f1d8f8dc06dad469dbd668cda23789,
+      type: 3}
+    size: 50
+  - tag: EnemyHitImpact
+    prefab: {fileID: 500085153124035401, guid: 94586f066bd23324fa6e7c6ba3c87c13, type: 3}
+    size: 50
+  - tag: EnemyProjectile
+    prefab: {fileID: 77967188066702510, guid: c6757c91f8f8acb4ab46f37237786cc4, type: 3}
+    size: 50
+  - tag: NormalMedkit
+    prefab: {fileID: 4201906548685886550, guid: a44a803fbc8a1f44ba7354cc28ef438f,
+      type: 3}
+    size: 25
+  - tag: DestructibleVFX
+    prefab: {fileID: 4315809858900715545, guid: 5db8eac6dd65d0f48a6376953df705b2,
+      type: 3}
+    size: 25
+  - tag: HealVFX
+    prefab: {fileID: 6125573847501342491, guid: b65c52a37874d7541959be4aa75fd3ac,
+      type: 3}
+    size: 25
+  - tag: EnemySuicideVFX
+    prefab: {fileID: 2245124338721005119, guid: b54eba13147b17c4cbb88ec5fc05148b,
+      type: 3}
+    size: 50
+  - tag: PlayerBloodVFX
+    prefab: {fileID: 4724070625597159194, guid: 644698c3bc701bd4b808187869b5cc3f,
+      type: 3}
+    size: 50
+  - tag: EnemyBloodVFX
+    prefab: {fileID: 3612396884045343829, guid: f1f99df411d00094a8049b7daf2174cd,
+      type: 3}
+    size: 50
+  - tag: DustRoll
+    prefab: {fileID: 8396336802441010080, guid: b01cf0cafc3b4c948bb1002030f48225,
+      type: 3}
+    size: 50
+  - tag: ExplosionVFX
+    prefab: {fileID: 896901888785105720, guid: bd64d36f178fa35468eec885d2ede66d, type: 3}
+    size: 25
+  - tag: ItemDropVFX
+    prefab: {fileID: 96141593465549251, guid: 8266ea1547efdf348b0f498b159bb1e5, type: 3}
+    size: 25
